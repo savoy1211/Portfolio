@@ -36,7 +36,7 @@ function Projects() {
               isBlog={false}
               title="Jazz Solo Ratings"
               description="This web app lets users discover and rate jazz solos. This app's API was made using NodeJS, the frontend was made using React, and MongoDB was used as the database."
-              link="https://github.com/soumyajit4419/Face_And_jazz_solo_ratings_Detection"
+              link="https://www.jazzsoloratings.com"
             />
           </Col>
 
