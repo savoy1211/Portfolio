@@ -1,19 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import BlogCard from "./BlogsCards";
 import Particle from "../Particle";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import leaf from "../../Assets/Projects/leaf.png";
 import woe from "../../Assets/Projects/wordorder_entropy3.png";
 import jazz_solo_ratings from "../../Assets/Projects/jazz_solo_ratings.jpg";
-import medhub from "../../Assets/Projects/medHub.png";
-import eeg from "../../Assets/Projects/eeg.gif";
-import suicide from "../../Assets/Projects/suicide.png";
-import algo from "../../Assets/Projects/algo.png";
-import plant from "../../Assets/Projects/plant.jpeg";
+
 
 function Projects() {
   return (
