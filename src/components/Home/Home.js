@@ -15,11 +15,11 @@ function Home() {
         <div className="container">
           <div className="row">
             <div style={{ paddingTop: 200 }} className="col-md-12">
-              <h1  className="heading mt-5">
+              <h1  className="heading mt-5" style={{color: "white"}}>
                 Hi There! <span className="wave">👋🏻</span>
               </h1>
 
-              <h1 className="heading-name">
+              <h1 className="heading-name" style={{color: "white"}}>
                 I'm
                 <strong className="main-name"> Ryan Lee</strong>
               </h1>
