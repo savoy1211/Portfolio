@@ -7,32 +7,37 @@ function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />I am a junior pursuing IMSC in Maths and Computing in BIT
-            Mesra.
+        <blockquote className="blockquote" >
+          <p style={{ textAlign: "center" }}>
+            Hi! I am <span className="green">Ryan Lee </span>
+            from <span className="green"> Los Angeles, CA.</span>
+            <br />I am a senior at University of California, Irvine pursuing a B.A. in Language Science.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
-          <ul>
-            <li className="about-activity">
-              <i className="far fa-hand-point-right"></i> Playing Games
-            </li>
-            <li className="about-activity">
-              <i className="far fa-hand-point-right"></i> Writting Tech Blogs
-            </li>
-            <li className="about-activity">
-              <i className="far fa-hand-point-right"></i> Travelling
-            </li>
-          </ul>
+          <p>
+          <div className="row" style={{ justifyContent: "center", paddingBottom: "10px" }}>
+              <ul>
+              <li className="about-activity">
+                <i className="far fa-hand-point-right"></i> Record Collecting
+              </li>
+              <li className="about-activity">
+                <i className="far fa-hand-point-right"></i> Bird Watching
+              </li>
+              <li className="about-activity">
+                <i className="far fa-hand-point-right"></i> Travelling
+              </li>
+            </ul>
+          </div>
 
-          <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+
+
+          <p style={{ marginBlockEnd: 0, color: "rgb(211,211,211)" }}>
+            "Only from the heart can you touch the sky."{" "}
+          </p>
+          <footer className="blockquote-footer">Rumi</footer>
         </blockquote>
       </Card.Body>
     </Card>

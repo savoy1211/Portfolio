@@ -7,58 +7,54 @@ import Tilt from "react-parallax-tilt";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section mt-5" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+        <Row  style={{ textAlign: "center" }}>
+          <Col md={12} className="home-about-description">
+            <h1 style={{ fontSize: "2.6em" }} className="mt-5">
+               <span className="purple"> About Me </span>
             </h1>
-            <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            <p className="home-about-body container" >
+             I am passionate about programming and machine learning.
               <br />
-              <br />I am fluent in classics like
+              <br />Programming languages I'm most familiar with are
               <i>
-                <b className="purple"> C++, Python and Javascript. </b>
+                <b className="purple"> Python </b>
+                and
+                <b className="purple"> Javascript. </b>
               </i>
               <br />
               <br />
-              My current focus is on &nbsp;
+              I am also interested in  &nbsp;
               <i>
                 <b className="purple">
-                  Deep Learning and Natural Language Processing.
+                  Natural Language Processing.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with
+              I enjoy spending time on side projects using modern technologies
+             
+               like
               <i>
-                <b className="purple"> Modern Javascript Frameworks</b>
+                <b className="purple"> Node.js </b>
+                and
+                <b className="purple">  React.js</b>
               </i>
-              like
-              <i>
-                <b className="purple"> Node.js and React.js</b>
-              </i>
+              
             </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
           </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            {/* <h1>FIND ME ON</h1> */}
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/savoy1211"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -68,32 +64,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <i className="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/ryan-lee-662ba7183/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <i className="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <i className="fab fa-instagram"></i>
                 </a>
               </li>
             </ul>

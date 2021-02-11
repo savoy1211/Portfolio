@@ -7,7 +7,8 @@ import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
+import woe from "../../Assets/Projects/wordorder_entropy3.png";
+import jazz_solo_ratings from "../../Assets/Projects/jazz_solo_ratings.jpg";
 import medhub from "../../Assets/Projects/medHub.png";
 import eeg from "../../Assets/Projects/eeg.gif";
 import suicide from "../../Assets/Projects/suicide.png";
@@ -25,29 +26,28 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row>
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={woe}
               isBlog={false}
-              title="Leaf Disease Prediction"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="Word Order Entropy Experiment"
+              description="This project uses n-gram models to calculate the word order entropy of languages such as English, Dutch, Turkish, Mandarin, and Polish. For each language, we've created a corpus containing texts from Project Gutenberg."
+              link="https://github.com/savoy1211/wordorder_info"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={jazz_solo_ratings}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Jazz Solo Ratings"
+              description="This web app lets users discover and rate jazz solos. This app's API was made using NodeJS, the frontend was made using React, and MongoDB was used as the database."
+              link="https://github.com/soumyajit4419/Face_And_jazz_solo_ratings_Detection"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
@@ -55,14 +55,14 @@ function Projects() {
               description="Using 'Natural Launguage Processing' for detection of posts in social media platform to identity if a person is affected by any mental illness and thus helping in sucide prevention."
               link="https://gist.github.com/soumyajit4419/ef44d41fdc510637c7f6730d1bbce2ed"
             />
-          </Col>
+          </Col> */}
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={eeg}
               isBlog={false}
-              title="Emotion Predcition from EEG Signals"
-              description="Using EEG signals from 'AMIGOS' Dataset to extract features and train a classifier that helps in detection of human emotions from Brain Signals."
+              title="jazz_solo_ratings Predcition from EEG Signals"
+              description="Using EEG signals from 'AMIGOS' Dataset to extract features and train a classifier that helps in detection of human jazz_solo_ratingss from Brain Signals."
               link="https://gist.github.com/soumyajit4419/dc94177bc4954752051798f88fbce1df"
             />
           </Col>
@@ -77,9 +77,9 @@ function Projects() {
               Giving an complete health Analytics to doctors of Patients as well as Doctors preseving user privacy."
               link="https://github.com/soumyajit4419/MedHub_360"
             />
-          </Col>
+          </Col> */}
         </Row>
-        <h1 className="project-heading">
+        {/* <h1 className="project-heading">
           My Recent <strong className="purple">Blog </strong> Posts
         </h1>
         <p style={{ color: "white" }}>Do give a read to some of my blogs</p>
@@ -100,7 +100,7 @@ function Projects() {
               site="medium.com"
             />
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Container>
   );

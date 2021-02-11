@@ -6,7 +6,7 @@ import Resumecontent from "./ResumeContent";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
-import pdf from "../../Assets/Soumyajit-Resume.pdf";
+import pdf from "../../Assets/resume.pdf";
 
 function Resume() {
   const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
@@ -35,68 +35,59 @@ function Resume() {
       <Container>
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button variant="primary" href={pdf} target="_blank">
-            <i className="fas fa-download">&nbsp;</i>Download CV
+            <i className="fas fa-download">&nbsp;</i>Download Resume
           </Button>
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
-            <h3 className="resume-title">Experience</h3>
+            <h3 className="resume-title">Relevant Experience</h3>
             <Resumecontent
-              title="JUNIOR ML ENGINEER [Omdena]"
-              date="June 2020 - August 2020"
+              title="Research Assistant, UC Irvine"
+              date="March 2020 - Current"
               content={[
-                "Assembled the data from various social media platforms using Twitter, Reddit.Interpreted the collected text using word-clouds and various other factors that affect the change of sentiments of youth.",
-                " Utilized the data to find the issues using Topic Modelling and Building models using LSTM, BERT to predict the sentiments of the youth.",
+                "Used machine learning techniques to quantify complexity in natural languages with Prof. Richard Futrell",
+                "Created language models in Python to find entropies of word sequences using n-gram models",
+                "Wrote Python scripts to generate multi-language corpora using a web-scraper",
+                "Developed a web-interface for an online experiment using JavaScript, HTML, and CSS"
               ]}
             />
             <h3 className="resume-title">Extracurricular Activities</h3>
             <Resumecontent
-              title="Web Developer [Pantheon-2019 Technical Fest of BIT Mesra]"
+              title="Programming Club, Vice President"
+              date="Sep 2018 – June 2019"
               content={[
-                "Worked on creating the frontend-end of the website using Bootstrap, Javascript.",
-              ]}
-            />
-            <Resumecontent
-              title="Web Developer [Bitotsav-2020 Technical Fest of BIT Mesra]"
-              content={[
-                "Operated on developing the frontend end of the website using Bootstrap, Javascript and backend APIs using Node.js",
+                "Taught club members basics in Python, bash, and git",
+                "Planned trips to programming seminars and hackathons",
               ]}
             />
           </Col>
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
-              date="2018 - Present"
-              content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
+              title="UC Irvine"
+              date="2019 - Present"
+              content={[`GPA: ${'3.98'}, Language Science B.A.`,
+              'Deans Honors List: Fall 2019-Present',
+              'Relevant Courses: Linguistic Data Science, Linear Algebra, Multivariable Calculus',
+              
+            ]}
             />
             <Resumecontent
-              title="12TH BOARD [ODM Public School,Odisha]"
-              date="2015 - 2017"
-              content={["Precentage: 88%"]}
-            />
-            <Resumecontent
-              title="10TH BOARD [ST Mary's School,Odisha] "
-              date="2005 - 2015"
-              content={["Precentage: 86%"]}
-            />
-            <h3 className="resume-title">Ranks and Achivements</h3>
-            <Resumecontent
-              title=""
+              title="Santa Monica College"
+              date="2017 - 2019"
               content={[
-                `Current rank in Spoj ${spojRank}`,
-                `Current rank in HackerRank  ${hackerrank}`,
-                "Top Performer in Code-Break 1.0",
-                "Participant in Hack-A-Bit 2019",
+                'Deans Honors List',
+                'Relevant Courses: Algorithms & Data Structures, Introduction to C++, Introduction to Statistics',
               ]}
+            />
+            <Resumecontent
+              title="Carleton College"
+              date="2015 - 2017"
+              content={[]}
             />
           </Col>
         </Row>
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank">
-            <i className="fas fa-download">&nbsp;</i>Download CV
-          </Button>
-        </Row>
+    
       </Container>
     </Container>
   );
