@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home2 from "./Home2";
@@ -10,15 +9,13 @@ import Project from "../Projects/Projects";
 function Home() {
   return (
 
-    <section className="m-5">
+    <section className="">
       <Particle />
-
-      <Container fluid className="home-section" id="home">
-        <Container className="home-content">
-          <Row >
-            {/* <Col md={12} className="home-header text-center"> */}
-            <Col md={12} className="col text-center">
-              <h1 style={{ paddingBottom: 15 }} className="heading mt-5">
+      <div className="container">
+        <div className="container">
+          <div className="row">
+            <div style={{ paddingTop: 200 }} className="col-md-12">
+              <h1  className="heading mt-5">
                 Hi There! <span className="wave">👋🏻</span>
               </h1>
 
@@ -30,14 +27,11 @@ function Home() {
               <div className="col text-center ml-3" style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
-            </Col>
+            </div>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              {/* <img src={homeLogo} alt="home pic" className="img-fluid" /> */}
-            </Col>
-          </Row>
-        </Container>
-      </Container>
+          </div>
+        </div>
+      </div>
       <Home2 />
       <Project />
     </section>

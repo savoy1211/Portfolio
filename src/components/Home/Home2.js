@@ -1,14 +1,13 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section mt-5" id="about">
-      <Container>
-        <Row  style={{ textAlign: "center" }}>
-          <Col md={12} className="home-about-description">
+    <div className="home-about-section container mt-5" id="about">
+      <div className="container">
+        <div className="row"  style={{ textAlign: "center" }}>
+          <div className="home-about-description col-md-12 mt-5">
             <h1 style={{ fontSize: "2.6em" }} className="mt-5">
                <span className="purple"> About Me </span>
             </h1>
@@ -41,10 +40,10 @@ function Home2() {
               </i>
               
             </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
+          </div>
+        </div>
+        <div className="row">
+          <div  className="home-about-social col-md-12">
             {/* <h1>FIND ME ON</h1> */}
             <p>
               Feel free to <span className="purple">connect </span>with me
@@ -71,10 +70,10 @@ function Home2() {
                 </a>
               </li>
             </ul>
-          </Col>
-        </Row>
-      </Container>
-    </Container>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 export default Home2;
