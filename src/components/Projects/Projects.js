@@ -6,6 +6,8 @@ import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import woe from "../../Assets/Projects/wordorder_entropy3.png";
 import jazz_solo_ratings from "../../Assets/Projects/jazz_solo_ratings.jpg";
+import music_library from "../../Assets/Projects/music_library.jpg";
+import albums_library from "../../Assets/Projects/albums_library.jpg";
 
 
 function Projects() {
@@ -40,15 +42,6 @@ function Projects() {
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Suicide Ideation Prediction"
-              description="Using 'Natural Launguage Processing' for detection of posts in social media platform to identity if a person is affected by any mental illness and thus helping in sucide prevention."
-              link="https://gist.github.com/soumyajit4419/ef44d41fdc510637c7f6730d1bbce2ed"
-            />
-          </Col> */}
 
           {/* <Col md={4} className="project-card">
             <ProjectCard
@@ -71,6 +64,28 @@ function Projects() {
               link="https://github.com/soumyajit4419/MedHub_360"
             />
           </Col> */}
+        </Row>
+        <Row>
+          
+        <Col md={6} className="project-card">
+            <ProjectCard
+              imgPath={music_library}
+              isBlog={false}
+              title="Jazz Lib"
+              
+              description="Jazz Lib is a web app that lets users search and discover jazz albums by decade, year, country, label, and personnel."
+              link="https://jazz-lib.herokuapp.com/"
+            />
+          </Col>
+          <Col md={6} className="project-card">
+            <ProjectCard
+              imgPath={albums_library}
+              isBlog={false}
+              title="Spotify Albums Organizer"
+              description="This desktop app lets users organize and visualize their saved Spotify albums by genre, year, and date added."
+              link="https://github.com/savoy1211/spotify-albums-organizer"
+            />
+          </Col>
         </Row>
         {/* <h1 className="project-heading">
           My Recent <strong className="purple">Blog </strong> Posts

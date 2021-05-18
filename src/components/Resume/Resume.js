@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
-import pdf from "../../Assets/resume.pdf";
+// import pdf from "../../Assets/resume.pdf";
 
 function Resume() {
   const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
@@ -34,16 +34,16 @@ function Resume() {
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank">
+          {/* <Button variant="primary" href={pdf} target="_blank">
             <i className="fas fa-download">&nbsp;</i>Download Resume
-          </Button>
+          </Button> */}
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Relevant Experience</h3>
             <Resumecontent
               title="Research Assistant, UC Irvine"
-              date="March 2020 - Current"
+              date="March 2020 - March 2021"
               content={[
                 "Used machine learning techniques to quantify complexity in natural languages with Prof. Richard Futrell",
                 "Created language models in Python to find entropies of word sequences using n-gram models",
